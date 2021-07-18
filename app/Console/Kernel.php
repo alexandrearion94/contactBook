@@ -29,7 +29,7 @@ class Kernel extends ConsoleKernel
 
     /**
      * Register the commands for the application.
-     * Teste
+     * 
      * @return void
      */
     protected function commands()
