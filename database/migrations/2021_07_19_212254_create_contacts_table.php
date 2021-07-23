@@ -17,9 +17,10 @@ class CreateContactsTable extends Migration
             $table->id();
 
             $table ->string("name",128);
-            $table ->int("fone",11);
+            $table ->string("fone",11);
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
