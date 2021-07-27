@@ -27,8 +27,8 @@ class ContactRequest extends FormRequest
             switch($this->method()) {
                 case "POST":
                      return [
-                         'name' => 'required|min:8|max:128|unique:Contact',
-                         'fone' => 'required|max:12',
+                         'name' => 'required|min:8|max:128|unique:contacts',
+                         'fone' => 'required|min:11',
                      ];
      
                      break;
