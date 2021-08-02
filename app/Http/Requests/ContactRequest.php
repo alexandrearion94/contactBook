@@ -36,8 +36,12 @@ class ContactRequest extends FormRequest
      
      
                  case "PUT":
-     
-                     break;
+                    return [
+                        'name' => 'min:8|max:128|unique:contacts,'.$this->contact->id,
+                        'fone' => 'min:11|unique:contacts, fone,'.$this->contact->id
+                    ];
+
+                    break;
      
      
                  default:break;    

@@ -80,7 +80,8 @@ class ContactController extends Controller
      * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Contact $contact)
+    //public function update(Request $request, Contact $contact)
+    public function update(ContactRequest $request, Contact $contact)
     {
         //$contact->name = $request->get('name');
         //$contact->fone = $request->get('fone');
