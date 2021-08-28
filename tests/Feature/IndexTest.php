@@ -23,7 +23,6 @@ class IndexTest extends TestCase
 
         $response->assertStatus(200)
         ->assertJsonFragment([
-            //'data' => [
                 [
                     'id' => $contact->id,
                     'name' => $contact->name,
